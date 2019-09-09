@@ -1,5 +1,6 @@
 import React from 'react';
 import "bootstrap/dist/css/bootstrap.min.css";
+
 import CreateTodo from "./components/create-todo.component";
 import EditTodo from "./components/edit-todo.component";
 import TodosList from "./components/todos-list.component";
@@ -20,19 +21,21 @@ function App() {
           <Link to="/" className="navbar-brand">
             MERN To-Do List
           </Link>
-          
-            <ul padding="20, auto"className="navbar-nav mr-auto">
-              <li >
+          <div className="">
+          <ul className="navbar-nav mr-auto" >
+              <li className="navbar-item">
                 <Link to="/" >
                   To-Dos
                 </Link>
               </li>|
-              <li >
+              <li className="navbar-item">
               <Link to="/create" >
                    Create
                 </Link>
               </li>
             </ul>
+          </div>
+
      
         </nav>
         <h2>MERN To-Do</h2>

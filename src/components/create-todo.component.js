@@ -40,12 +40,12 @@ export default class CreateTodos extends Component {
         e.preventDefault();
 
         // Backend Logic
-        console.log(`Now Go update your Database`)
+
         console.log(`To Do Description ${this.state.todo_description}`)
         console.log(`todo_responsible ${this.state.todo_responsible}`)
         console.log(`todo_priority ${this.state.todo_priority}`)
         console.log(`todo_completed ${this.state.todo_completed}`)
-
+        console.log(`Now Go update your Database`)
         this.setState({
             todo_description: '',
             todo_responsible: '',
